@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Akhir dicoding</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header start -->
+    <header>
+      <a href="#" class="Judul">Tugas Dicoding</a>
+
+      <!-- Navigasi start -->
+      <nav>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- navbar logo -->
+      <div class="menu-icon">
+        <img src="./assets/img/navbar icon.png" alt="Icon menu" />
+      </div>
+      <!--Navigasi end  -->
+    </header>
+    <!-- Header end -->
+
+    <!-- Main start -->
+    <main>
+      <div class="content" id="content">
+        <article>
+          <h2>Frontend Developer</h2>
+          <img src="./assets/img/frontend.jpg" alt="Frontend Developer" />
+          <p>
+            Front-End Developer bertanggung jawab menciptakan antarmuka pengguna
+            yang menarik dan interaktif pada situs web, menggunakan teknologi
+            seperti HTML, CSS, dan JavaScript untuk memastikan pengalaman
+            pengguna yang optimal dan responsif.
+          </p>
+          <a href="#">Lihat Selengkapnya!</a>
+        </article>
+        <article>
+          <h2>Backend Developer</h2>
+          <img src="./assets/img/backend.jpg" alt="Backend Developer" />
+          <p>
+            Backend Developer bertanggung jawab untuk logika server, basis data,
+            dan integrasi aplikasi, memastikan fungsionalitas situs web berjalan
+            mulus di sisi server dan mendukung performa aplikasi yang optimal.
+          </p>
+          <a href="#">Lihat Selengkapnya!</a>
+        </article>
+
+        <article>
+          <h2>Fullstack Developer</h2>
+          <img src="./assets/img/fullstack.jpg" alt="Fullstack Developer" />
+          <p>
+            Full Stack Developer menguasai front-end dan back-end, bekerja
+            dengan klien, server, dan basis data untuk membangun aplikasi web
+            lengkap, memastikan integrasi dan fungsionalitas dari seluruh
+            sistem.
+          </p>
+          <a href="#">Lihat Selengkapnya!</a>
+        </article>
+      </div>
+
+      <aside>
+        <div class="article-side">
+          <img src="./assets/img/Ai Robot.jpg" alt="Gambar Aside" />
+          <h2>Artificial Intelligence</h2>
+          <p>
+            Artificial Intelligence (AI) adalah teknologi yang memungkinkan
+            mesin meniru kecerdasan manusia, seperti belajar, memahami, dan
+            memecahkan masalah secara otomatis tanpa intervensi manusia.
+          </p>
+          <button>Baca Selengkapnya!</button>
+        </div>
+      </aside>
+    </main>
+
+    <footer>&copy; 2024| Dewangga Tirta Kencana | Tugas dicoding</footer>
+
+    <!-- Javascript start -->
+
+    <!-- Javascript menu humbburger -->
+    <script>
+      const nav = document.querySelector("nav ul");
+      const menuIcon = document.querySelector(".menu-icon");
+
+      menuIcon.addEventListener("click", (event) => {
+        event.stopPropagation();
+        nav.classList.toggle("active");
+      });
+
+      document.addEventListener("click", (event) => {
+        if (!nav.contains(event.target) && !menuIcon.contains(event.target)) {
+          nav.classList.remove("active");
+        }
+      });
+    </script>
+  </body>
+</html>
